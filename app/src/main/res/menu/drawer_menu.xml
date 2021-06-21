@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+
+        <item
+            android:title="@string/weather"
+            android:id="@+id/weather"
+            android:icon="@drawable/ic_sun"
+            android:checked="true" />
+
+        <item
+            android:title="@string/crop_details"
+            android:id="@+id/cropDetail"
+            android:icon="@drawable/ic_list" />
+
+    </group>
+
+    <group
+        android:id="@+id/group2">
+
+        <item
+            android:title="@string/moisture_level"
+            android:id="@+id/moistureLevel"
+            android:icon="@drawable/ic_drop"/>
+
+        <item
+            android:title="@string/soil_fertility_check"
+            android:id="@+id/soilCheck"
+            android:icon="@drawable/ic_soil_check"/>
+    </group>
+
+    <group
+        android:id="@+id/group3">
+
+        <item
+            android:title="@string/agricultural_schemes"
+            android:id="@+id/agriSchemes"
+            android:icon="@drawable/ic_book" />
+
+        <item
+            android:title="@string/agricultural_news"
+            android:id="@+id/agriNews"
+            android:icon="@drawable/ic_dynamic_feed" />
+
+    </group>
+
+    <group
+        android:id="@+id/lastGroup">
+
+        <item
+            android:title="@string/change_language"
+            android:id="@+id/language"
+            android:icon="@drawable/ic_translate"/>
+
+        <item
+            android:title="@string/logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout" />
+
+    </group>
+
+
+</menu>

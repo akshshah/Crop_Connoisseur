@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky"
+    tools:context=".Fragments.DiseaseDetailFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCropName"
+            android:text="Crop Name : "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cropName"
+            android:text="Crop Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_toEndOf="@id/txtCropName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDiseaseName"
+            android:text="Disease Name : "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtCropName"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diseaseName"
+            android:text="Disease Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtCropName"
+            android:layout_toEndOf="@id/txtDiseaseName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHarmful"
+            android:text="Harmful : "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtDiseaseName"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/harmful"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtDiseaseName"
+            android:layout_toEndOf="@id/txtHarmful"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCause"
+            android:text="Cause By : "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtHarmful"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cause"
+            android:text="Cause"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtHarmful"
+            android:layout_toEndOf="@id/txtCause"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRemedy"
+            android:text="Remedy : "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/cause"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remedy"
+            android:text="Remedy"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cause"
+            android:layout_toEndOf="@id/txtRemedy"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

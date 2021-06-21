@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DetectDiseaseFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:id="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_add_image"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLayout"
+            android:layout_below="@id/image"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCamera"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="Camera"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/center"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGallery"
+                android:text="Gallery"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonLayout"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

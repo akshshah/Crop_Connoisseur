@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create A New Account"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtSignUp"
+        android:layout_below="@id/toolbar"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtSignUp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editUsername"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_textColorHint="#9E9E9E"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabel="highlight"
+                    android:hint="Username" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:id="@+id/editEmail"
+                    android:layout_below="@+id/editUsername"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textEmailAddress"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_textColorHint="#9E9E9E"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabel="highlight"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_below="@+id/editEmail"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="password_toggle"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/passLayout"
+                    app:endIconTint="@color/colorAccent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:id="@+id/editPass"
+                        android:layout_below="@+id/editEmail"
+                        android:inputType="textPassword"
+                        app:met_minCharacters="6"
+                        app:met_underlineColor="@color/colorAccent"
+                        app:met_primaryColor="@color/colorAccent"
+                        app:met_textColorHint="#9E9E9E"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabel="highlight"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile number"
+                    android:id="@+id/editNumber"
+                    android:layout_below="@+id/passLayout"
+                    android:layout_marginTop="20dp"
+                    android:inputType="phone"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_textColorHint="#9E9E9E"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabel="highlight"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/secondLayout"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FBFAFA"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:id="@+id/btnRegister"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/secondLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/progress_circular"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

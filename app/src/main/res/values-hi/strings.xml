@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crop Connoisseur</string>
+    <string name="weather">मौसम</string>
+    <string name="crop_details">फसल विवरण</string>
+    <string name="moisture_level">नमी का स्तर</string>
+    <string name="soil_fertility_check">मिट्टी उपजाऊपन</string>
+    <string name="agricultural_schemes">कृषि योजनाओं</string>
+    <string name="agricultural_news">कृषि समाचार</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="detect_disease">बीमारी की जांच</string>
+    <string name="home">होम</string>
+    <string name="community">समुदाय</string>
+    <string name="ask_a_question">सवाल पूछे</string>
+    <string name="filter_topic">विषय चुने</string>
+    <string name="my_questions">मेरे सवाल</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="post">प्रश्न पोस्ट करें</string>
+    <string name="enter_your_question_here">यहाँ अपना प्रश्न दर्ज करें</string>
+    <string name="topic">विषय :</string>
+    <string name="view_all_comments">सब कमेंट देखे</string>
+    <string name="write_a_comment">कमेंट लिखें ...</string>
+
+    <string-array name="topics">
+        <item>विषय चुने</item>
+        <item>रोग संबंधी</item>
+        <item>कृषि समाचार</item>
+        <item>कृषि योजनाओं</item>
+        <item>समाधान</item>
+        <item>टूल्स और टेक्नोलॉजी</item>
+        <item>अन्य</item>
+    </string-array>
+
+</resources>

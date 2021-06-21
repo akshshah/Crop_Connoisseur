@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitle"
+        android:text="Add a comment"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMoisture"
+        android:text="Moisture : "
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moisture"
+        android:text="Moisture"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/txtMoisture" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your comment here..."
+        android:id="@+id/comment"
+        android:layout_marginTop="15dp"
+        android:lines="2"
+        app:met_underlineColor="@color/colorAccent"
+        app:met_primaryColor="@color/colorAccent"
+        app:met_textColorHint="#9E9E9E"
+        app:met_floatingLabelAnimating="true"
+        app:met_floatingLabel="highlight"
+        android:layout_below="@id/txtMoisture"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDone"
+        android:text="Done"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/comment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

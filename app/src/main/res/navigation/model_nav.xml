@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/model_nav"
+    app:startDestination="@id/selectCropFragment">
+
+    <fragment
+        android:id="@+id/selectCropFragment"
+        android:name="com.example.cropconnoisseur.Fragments.ModelCropsFragment"
+        android:label="fragment_select_crop"
+        tools:layout="@layout/fragment_model_crops" >
+        <action
+            android:id="@+id/action_selectCropFragment_to_detectDiseaseFragment"
+            app:destination="@id/detectDiseaseFragment" />
+        <action
+            android:id="@+id/action_selectCropFragment_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detectDiseaseFragment"
+        android:name="com.example.cropconnoisseur.Fragments.DetectDiseaseFragment"
+        android:label="fragment_detect_disease"
+        tools:layout="@layout/fragment_detect_disease" >
+        <action
+            android:id="@+id/action_detectDiseaseFragment_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diseaseDetailFragment"
+        android:name="com.example.cropconnoisseur.Fragments.DiseaseDetailFragment"
+        android:label="fragment_disease_detail"
+        tools:layout="@layout/fragment_disease_detail" />
+
+</navigation>

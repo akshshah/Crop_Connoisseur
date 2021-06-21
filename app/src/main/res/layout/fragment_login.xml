@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout1"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/heading"
+            android:src="@drawable/logo_bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/txtLogin"
+            android:layout_below="@+id/heading"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout"
+            android:layout_below="@+id/txtLogin"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/editEmail"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                app:met_underlineColor="@color/colorAccent"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_below="@+id/editEmail"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false"
+                android:layout_marginTop="20dp"
+                android:id="@+id/passLayout"
+                app:endIconTint="@color/colorAccent">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/editPass"
+                    android:layout_below="@+id/editEmail"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_textColorHint="#9E9E9E"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabel="highlight"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/secondLayout"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/forgotPass"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="40dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/forgotPass"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/btnLogin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRegister"
+                android:textColor="@color/colorPrimary"
+                android:text="New Here? Create Account"
+                android:layout_below="@+id/btnLogin"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/secondLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/progress_circular"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

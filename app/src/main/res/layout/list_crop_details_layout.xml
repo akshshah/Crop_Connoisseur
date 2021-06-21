@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardIntroduction"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnIntroduction"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Introduction"
+                android:textSize="16sp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnIntroduction"
+                app:layout_constraintStart_toEndOf="@+id/btnIntroduction"
+                app:layout_constraintTop_toTopOf="@+id/btnIntroduction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/introduction"
+                android:text="Introduction"
+                android:visibility="gone"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnIntroduction"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardClimate"
+        android:layout_below="@+id/cardIntroduction"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnClimate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtClimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Climate"
+                android:textSize="16sp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnClimate"
+                app:layout_constraintStart_toEndOf="@+id/btnClimate"
+                app:layout_constraintTop_toTopOf="@+id/btnClimate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/climate"
+                android:text="Climate"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnClimate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardSoil"
+        android:layout_below="@+id/cardClimate"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnSoil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtSoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Land or Soil"
+                android:textSize="16sp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSoil"
+                app:layout_constraintStart_toEndOf="@+id/btnSoil"
+                app:layout_constraintTop_toTopOf="@+id/btnSoil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/soil"
+                android:text="Soil"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnSoil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardFertilizer"
+        android:layout_below="@+id/cardSoil"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnFertilizer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtFertilizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Fertilizer"
+                android:layout_marginStart="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnFertilizer"
+                app:layout_constraintStart_toEndOf="@+id/btnFertilizer"
+                app:layout_constraintTop_toTopOf="@+id/btnFertilizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fertilizer"
+                android:text="Fertilizer"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnFertilizer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardIrrigation"
+        android:layout_below="@+id/cardFertilizer"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnIrrigation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtIrrigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Irrigation"
+                android:textSize="16sp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnIrrigation"
+                app:layout_constraintStart_toEndOf="@+id/btnIrrigation"
+                app:layout_constraintTop_toTopOf="@+id/btnIrrigation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/irrigation"
+                android:text="Irrigation"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnIrrigation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardDisease"
+        android:layout_below="@+id/cardIrrigation"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_expand"
+                android:id="@+id/btnDisease"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Disease"
+                android:textSize="16sp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDisease"
+                app:layout_constraintStart_toEndOf="@+id/btnDisease"
+                app:layout_constraintTop_toTopOf="@+id/btnDisease" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/disease"
+                android:text="Disease"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/btnDisease"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
